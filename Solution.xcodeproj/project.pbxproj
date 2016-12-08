@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0C24051DF75B8A00CE85FC /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0C24041DF75B8A00CE85FC /* Expression.swift */; };
+		CC0C24071DF75B9400CE85FC /* ExpressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0C24061DF75B9400CE85FC /* ExpressionTests.swift */; };
+		CC0C24091DF9F3CD00CE85FC /* ExpressionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0C24081DF9F3CD00CE85FC /* ExpressionConstants.swift */; };
 		CC4A97311DD909A000F30FAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4A97301DD909A000F30FAC /* AppDelegate.swift */; };
 		CC4A97361DD909A000F30FAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4A97341DD909A000F30FAC /* Main.storyboard */; };
 		CC4A97381DD909A000F30FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4A97371DD909A000F30FAC /* Assets.xcassets */; };
 		CC4A973B1DD909A000F30FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4A97391DD909A000F30FAC /* LaunchScreen.storyboard */; };
 		CC537D7A1DF0B7B300FC74E3 /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC537D791DF0B7B300FC74E3 /* Term.swift */; };
 		CC537D7C1DF0B7E100FC74E3 /* TermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC537D7B1DF0B7E100FC74E3 /* TermTests.swift */; };
-		CC537D7E1DF0B7FC00FC74E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC537D7D1DF0B7FC00FC74E3 /* Constants.swift */; };
+		CC537D7E1DF0B7FC00FC74E3 /* TermConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC537D7D1DF0B7FC00FC74E3 /* TermConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC0C24041DF75B8A00CE85FC /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		CC0C24061DF75B9400CE85FC /* ExpressionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionTests.swift; sourceTree = "<group>"; };
+		CC0C24081DF9F3CD00CE85FC /* ExpressionConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionConstants.swift; sourceTree = "<group>"; };
 		CC4A972D1DD909A000F30FAC /* Solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4A97301DD909A000F30FAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC4A97351DD909A000F30FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,7 +43,7 @@
 		CC4A97471DD909A000F30FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC537D791DF0B7B300FC74E3 /* Term.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
 		CC537D7B1DF0B7E100FC74E3 /* TermTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermTests.swift; sourceTree = "<group>"; };
-		CC537D7D1DF0B7FC00FC74E3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CC537D7D1DF0B7FC00FC74E3 /* TermConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		CC0C24021DF7591900CE85FC /* Expression */ = {
 			isa = PBXGroup;
 			children = (
+				CC0C24041DF75B8A00CE85FC /* Expression.swift */,
 				CC537D791DF0B7B300FC74E3 /* Term.swift */,
 			);
 			name = Expression;
@@ -69,10 +76,28 @@
 		CC0C24031DF7592800CE85FC /* ExpressionTests */ = {
 			isa = PBXGroup;
 			children = (
-				CC537D7D1DF0B7FC00FC74E3 /* Constants.swift */,
-				CC537D7B1DF0B7E100FC74E3 /* TermTests.swift */,
+				CC0C240A1DF9F3EE00CE85FC /* Constants */,
+				CC0C240B1DF9F3F900CE85FC /* Expression */,
 			);
 			name = ExpressionTests;
+			sourceTree = "<group>";
+		};
+		CC0C240A1DF9F3EE00CE85FC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CC537D7D1DF0B7FC00FC74E3 /* TermConstants.swift */,
+				CC0C24081DF9F3CD00CE85FC /* ExpressionConstants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		CC0C240B1DF9F3F900CE85FC /* Expression */ = {
+			isa = PBXGroup;
+			children = (
+				CC537D7B1DF0B7E100FC74E3 /* TermTests.swift */,
+				CC0C24061DF75B9400CE85FC /* ExpressionTests.swift */,
+			);
+			name = Expression;
 			sourceTree = "<group>";
 		};
 		CC4A97241DD9099F00F30FAC = {
@@ -239,6 +264,7 @@
 			files = (
 				CC4A97311DD909A000F30FAC /* AppDelegate.swift in Sources */,
 				CC537D7A1DF0B7B300FC74E3 /* Term.swift in Sources */,
+				CC0C24051DF75B8A00CE85FC /* Expression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC537D7C1DF0B7E100FC74E3 /* TermTests.swift in Sources */,
-				CC537D7E1DF0B7FC00FC74E3 /* Constants.swift in Sources */,
+				CC0C24091DF9F3CD00CE85FC /* ExpressionConstants.swift in Sources */,
+				CC537D7E1DF0B7FC00FC74E3 /* TermConstants.swift in Sources */,
+				CC0C24071DF75B9400CE85FC /* ExpressionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
