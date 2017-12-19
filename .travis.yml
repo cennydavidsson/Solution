@@ -1,0 +1,4 @@
+language: swift
+os: osx
+xcode_project: Solution.xcodeproj
+xcode_scheme: Solution
