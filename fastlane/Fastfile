@@ -1,18 +1,24 @@
-fastlane_version "2.68.0"
+fastlane_version "2.63.0"
 
 default_platform :ios
 
 platform :ios do
   
+  testScheme = "Solution"
+  releaseScheme = "Solution"
+
   desc "Runs all the tests"
   lane :test do
-    run_tests(scheme: "Solution")
+    run_tests(scheme: testScheme)
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
     ensure_git_status_clean
+
+    run_tests
+
     increment_build_number
     commit_version_bump
     push_to_git_remote
@@ -25,7 +31,7 @@ platform :ios do
   desc "Deploy a new version to the App Store"
   lane :release do
     # capture_screenshots
-    build_app(scheme: "Solution")
+    build_app(scheme: releaseScheme)
     upload_to_app_store(force: true)
   end
 end
