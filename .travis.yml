@@ -1,5 +1,4 @@
 language: objective-c
 osx_image: xcode9.2
-
-script:
-  - xcodebuild clean && xcodebuild test -sdk iphonesimulator11.2 -project Solution.xcodeproj -scheme Solution CODE_SIGNING_REQUIRED=NO -destination 'platform=iOS Simulator,name=iPhone X,OS=11.2'
+xcode_project: Solution.xcodeproj
+xcode_scheme: Solution
